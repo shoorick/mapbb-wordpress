@@ -12,9 +12,11 @@ Author URI: http://shoorick.ru/
 function map_process( $atts, $content = NULL ){
 
     if (!empty($atts[0]))
-        $attr = preg_replace('/^=/', '', array_shift($atts));
-
-    return "<p style=\"background:#fec\">content: $content<br>attribute: $attr</p>";
+        $attr = array_shift($atts);
+    $id = rand(); //int(rand());
+    return
+        "<div id=\"map$id\">[map$attr]$content" . "[/map]</div>"
+        . "<script language=\"javascript\">if(mapBBcode) mapBBcode.show('map$id');</script>";
 }
 
 add_shortcode( 'map', 'map_process' );
