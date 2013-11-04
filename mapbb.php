@@ -22,12 +22,12 @@ add_action('wp_print_styles', 'mapbb_stylesheet');
 
 function mapbb_scripts() {
     // Register the script like this for a plugin:
-    wp_register_script( 'mapbbcode-script',
-        plugins_url( '/mapbbcode/leaflet.js',      __FILE__ ),
-        array( 'jquery' )
-    );
+    wp_register_script( 'leaflet',      plugins_url( '/mapbbcode/leaflet.js' ), array( 'jquery' ) );
+    wp_register_script( 'leaflet-draw', plugins_url( '/mapbbcode/leaflet.draw.js' ) );
+
     // For either a plugin or a theme, you can then enqueue the script:
-    wp_enqueue_script(  'mapbbcode-script' );
+    wp_enqueue_script(  'leaflet' );
+    wp_enqueue_script(  'leaflet-draw' );
 }
 add_action( 'wp_enqueue_scripts', 'mapbb_scripts' );
 
