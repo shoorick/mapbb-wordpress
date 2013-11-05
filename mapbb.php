@@ -30,7 +30,6 @@ function mapbb_stylesheet() {
 }
 
 function mapbb_scripts() {
-    // Register the script like this for a plugin:
     wp_register_script( 'leaflet',          plugins_url( 'dist/lib/leaflet.js',      __FILE__ ), array( 'jquery' ) );
     wp_register_script( 'leaflet-draw',     plugins_url( 'dist/lib/leaflet.draw.js', __FILE__ ) );
     wp_register_script( 'bing-map',         plugins_url( 'dist/lib/Bing.js',         __FILE__ ) );
@@ -38,7 +37,10 @@ function mapbb_scripts() {
     wp_register_script( 'mapbbcode-config', plugins_url( 'dist/mapbbcode-config.js', __FILE__ ) );
     wp_register_script( 'mapbb-init',       plugins_url( 'init.js',                  __FILE__ ) );
 
-    // For either a plugin or a theme, you can then enqueue the script:
+/*    global $mapbb_used;
+	if ( ! $mapbb_used )
+        return;*/
+
     wp_enqueue_script(  'leaflet' );
     wp_enqueue_script(  'leaflet-draw' );
     wp_enqueue_script(  'bing-map' );
@@ -47,13 +49,15 @@ function mapbb_scripts() {
     wp_enqueue_script(  'mapbb-init' );
 }
 
-add_action('wp_print_styles',    'mapbb_stylesheet');
-add_action('wp_enqueue_scripts', 'mapbb_scripts' );
+add_action('wp_print_styles',   'mapbb_stylesheet');
+add_action('wp_enqueue_scripts', 'mapbb_scripts');
 
 
 // [map]
 function map_process( $atts, $content = NULL ){
 
+    global $mapbb_used;
+	$mapbb_used = true;
 
     if (!empty($atts[0]))
         $attr = array_shift($atts);
