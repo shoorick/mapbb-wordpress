@@ -11,11 +11,11 @@ Author URI: http://shoorick.ru/
 
 function mapbb_stylesheet() {
     // Main style
-    wp_register_style( 'leaflet',      plugins_url( '/mapbb-wordpress/mapbbcode/lib/leaflet.css' ));
-    wp_register_style( 'leaflet-draw', plugins_url( '/mapbb-wordpress/mapbbcode/lib/leaflet.draw.css' ));
+    wp_register_style( 'leaflet',      plugins_url( '/mapbb-wordpress/dist/lib/leaflet.css' ));
+    wp_register_style( 'leaflet-draw', plugins_url( '/mapbb-wordpress/dist/lib/leaflet.draw.css' ));
     // for IE
-    wp_register_style( 'leaflet-ie',      plugins_url( '/mapbb-wordpress/mapbbcode/lib/leaflet.ie.css' ));
-    wp_register_style( 'leaflet-draw-ie', plugins_url( '/mapbb-wordpress/mapbbcode/lib/leaflet.draw.ie.css' ));
+    wp_register_style( 'leaflet-ie',      plugins_url( '/mapbb-wordpress/dist/lib/leaflet.ie.css' ));
+    wp_register_style( 'leaflet-draw-ie', plugins_url( '/mapbb-wordpress/dist/lib/leaflet.draw.ie.css' ));
 
     // For either a plugin or a theme, you can then enqueue the style:
     wp_enqueue_style( 'leaflet' );
@@ -31,12 +31,12 @@ function mapbb_stylesheet() {
 
 function mapbb_scripts() {
     // Register the script like this for a plugin:
-    wp_register_script( 'leaflet',          plugins_url( '/mapbb-wordpress/mapbbcode/lib/leaflet.js' ), array( 'jquery' ) );
-    wp_register_script( 'leaflet-draw',     plugins_url( '/mapbb-wordpress/mapbbcode/lib/leaflet.draw.js' ) );
-    wp_register_script( 'bing-map',         plugins_url( '/mapbb-wordpress/mapbbcode/Bing.js' ) );
-    wp_register_script( 'mapbbcode',        plugins_url( '/mapbb-wordpress/mapbbcode/mapbbcode.js' ) );
-    wp_register_script( 'mapbbcode-config', plugins_url( '/mapbb-wordpress/mapbbcode/mapbbcode-config.js' ) );
-    wp_register_script( 'mapbb-init',       plugins_url( '/mapbb-wordpress/mapbbcode/init.js' ) );
+    wp_register_script( 'leaflet',          plugins_url( '/mapbb-wordpress/dist/lib/leaflet.js' ), array( 'jquery' ) );
+    wp_register_script( 'leaflet-draw',     plugins_url( '/mapbb-wordpress/dist/lib/leaflet.draw.js' ) );
+    wp_register_script( 'bing-map',         plugins_url( '/mapbb-wordpress/dist/lib/Bing.js' ) );
+    wp_register_script( 'mapbbcode',        plugins_url( '/mapbb-wordpress/dist/mapbbcode.js' ) );
+    wp_register_script( 'mapbbcode-config', plugins_url( '/mapbb-wordpress/dist/mapbbcode-config.js' ) );
+    wp_register_script( 'mapbb-init',       plugins_url( '/mapbb-wordpress/init.js' ) );
 
     // For either a plugin or a theme, you can then enqueue the script:
     wp_enqueue_script(  'leaflet' );
