@@ -9,11 +9,11 @@ Stable tag: trunk
 License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-MapBB-shortcodes [map] for Leaflet based maps.
+MapBB-shortcodes `[map]` for Leaflet based maps.
 
 == Description ==
 
-This plugin allows to use shortcode [map] which transforms to Leaflet based map.
+This plugin allows to use shortcode `[map]` which transforms to Leaflet based map.
 
 == Installation ==
 
@@ -21,18 +21,19 @@ This plugin allows to use shortcode [map] which transforms to Leaflet based map.
 1. Put plugin content to the `mapbb-wordpress` directory:
   * Download and unzip archive https://github.com/shoorick/mapbb-wordpress/archive/master.zip   
     or
-  * Clone repository from github:
+  * Clone repository from github:   
     `git clone https://github.com/shoorick/mapbb-wordpress.git`
 1. Activate the plugin through the 'Plugins' menu in WordPress.
 
 == Usage ==
 
 Add shortcode into you pages:
-* [map][/map] for default map
-* [map=Zoom,Latitude,Longitude][/map] for map centered at (Latitude, Longitude)
-* [map]Latitude,Longitude(Text)[/map] for map with balloon
-* [map]Lat1,Lon1; Lat2,Lon2[/map] for map with multiple markers
-* [map]Lat1,Lon1 Lat2,Lon2 Lat3,Lon3(color|Text)[/map] for map with polyline or polygon
+
+* `[map][/map]` for default map
+* `[map=Zoom,Latitude,Longitude][/map]` for map centered at (Latitude, Longitude)
+* `[map]Latitude,Longitude(Text)[/map]` for map with balloon
+* `[map]Lat1,Lon1; Lat2,Lon2[/map]` for map with multiple markers
+* `[map]Lat1,Lon1 Lat2,Lon2 Lat3,Lon3(color|Text)[/map]` for map with polyline or polygon
 
 See examples at http://shoorick.ru/software/mapbb-wordpress/
 
