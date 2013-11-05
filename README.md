@@ -7,7 +7,7 @@ MapBB-shortcodes `[map]` for Leaflet based maps.
 * Donate link: [via PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=UYTK9PBGSMKWE&lc=RU&item_name=Alexander%20Sapozhnikov&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted)
 * Tags: map, maps, openstreetmap, osm, shortcode, leaflet, mapbbcode
 * Tested with: 3.7.1
-* License: [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html)
+* License: [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) or later
 
 Description
 -----------
