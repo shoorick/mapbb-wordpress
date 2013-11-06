@@ -3,9 +3,10 @@ MapBBCode for WordPress
 
 MapBB-shortcodes `[map]` for Leaflet based maps.
 
+* [Page in Plugin directory at WordPress.org](http://wordpress.org/plugins/mapbb/)
 * Contributors: [shoorick](http://wordpress.org/support/profile/shoorick)
 * Donate link: [via PayPal](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=UYTK9PBGSMKWE&lc=RU&item_name=Alexander%20Sapozhnikov&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted)
-* Tags: map, maps, openstreetmap, osm, shortcode, leaflet, mapbbcode
+* Tags: map, maps, openstreetmap, osm, shortcode, leaflet, mapbbcode, mapbb
 * Tested with: 3.7.1
 * License: [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) or later
 
@@ -17,13 +18,18 @@ This plugin allows to use shortcode `[map]` which transforms to Leaflet based ma
 Installation
 ------------
 
-1. Go to the `/wp-content/plugins/` directory,
-1. Put plugin content to the `mapbb-wordpress` directory:
-  * Download and unzip [archive](https://github.com/shoorick/mapbb-wordpress/archive/master.zip)    
+1. Get the plugin:
+  * Through “Plugins” → “Add New” menu in WordPress.   
     or
-  * Clone repository from github:    
-    `git clone https://github.com/shoorick/mapbb-wordpress.git`
-1. Activate the plugin through the 'Plugins' menu in WordPress.
+  * Download archive [from WordPress.org](http://downloads.wordpress.org/plugin/mapbb.zip) or [from Guthub](https://github.com/shoorick/mapbb-wordpress/archive/master.zip) and unzip it to `/wp-content/plugins/` directory   
+    or
+  * Checkout source code to `/wp-content/plugins/` directory:
+     * from WordPress.org:   
+       `svn co http://plugins.svn.wordpress.org/mapbb/tags/0.1/ mapbb`   
+       or
+     * from Github:   
+       `git clone https://github.com/shoorick/mapbb-wordpress.git`
+1. Activate the plugin through the “Plugins” menu in WordPress.
 
 Usage
 -----
