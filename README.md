@@ -53,6 +53,11 @@ still not tested with other themes and may appear ugly.
 Changelog
 ---------
 
+### 0.2
+
+- MappBBCode updated.
+- URLs of default layer tiles changed because of moving by GIScience Heidelberg.
+
 ### 0.1
 
 Initial release

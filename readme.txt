@@ -4,7 +4,7 @@ Contributors: shoorick
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=UYTK9PBGSMKWE&lc=RU&item_name=Alexander%20Sapozhnikov&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHosted
 Tags: map, maps, openstreetmap, osm, shortcode, leaflet, mapbbcode, mapbb
 Requires at least: 3.0.1
-Tested up to: 3.7.1
+Tested up to: 4.7.2
 Stable tag: 0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -66,7 +66,8 @@ still not tested with other themes and may appear ugly.
 
 = 0.2 =
 
-Customizing will be added.
+* MappBBCode updated.
+* URLs of default layer tiles changed because of moving by GIScience Heidelberg.
 
 = 0.1 =
 
