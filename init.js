@@ -12,7 +12,8 @@ var mapBBcode = new MapBBCode({
     fullFromStart: false,
     preferStandardLayerSwitcher: true,
     createLayers: function(L) { return [
-        L.tileLayer('http://korona.geog.uni-heidelberg.de/tiles/roads/x={x}&y={y}&z={z}', { name: 'OpenMapSurfer', attribution: 'Map &copy; <a href=\"http://openstreetmap.org\">OSM</a> | Tiles &copy; <a href=\"http://giscience.uni-hd.de/\">GIScience Heidelberg</a>', minZoom: 0, maxZoom: 19 }),
+        // https://api.openrouteservice.org/mapsurfer/{z}/{x}/{y}.png?api_key={k}
+        L.tileLayer('https://korona.geog.uni-heidelberg.de/tiles/roads/x={x}&y={y}&z={z}', { name: 'OpenMapSurfer', attribution: 'Map &copy; <a href=\"https://openstreetmap.org\">OSM</a> | Tiles &copy; <a href=\"https://giscience.uni-hd.de/\">GIScience Heidelberg</a>', minZoom: 0, maxZoom: 19 }),
         MapBBCode.prototype.createOpenStreetMapLayer()
     ]}
 });
